@@ -5,7 +5,26 @@
 
 body {
     margin: 0%;
-    background-color: rgb(41, 44, 46);
+    background-color: rgb(255, 255, 255);
+}
+
+button  {
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgb(5, 201, 136);
+}
+
+button:hover    {
+    filter: brightness(50%);
+}
+
+.numero   {
+    background-color: black;
+}
+
+
+.operador { 
+    background-color: rgb(54, 224, 187);
 }
 
 .container {
@@ -15,6 +34,19 @@ body {
     height: 100vh;
 }
 
-.calculadora  {
+.botones   {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    background-color: rgb(5, 201, 136);
+    padding: 5px;
+}
 
+.calculadora   {
+    background-color: rgb(5, 201, 136);
+}
+
+input {
+    width: 100%;
+    text-align: right;
+    color: black;
 }
